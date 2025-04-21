@@ -1,4 +1,4 @@
-import { DeployFunction } from "hardhat-deploy/types";
+import { DeployFunction } from "hardhat-deploy/types";//xiugai
 import { HardhatRuntimeEnvironment } from "hardhat/types";
 import { getDeployerAccount } from "../utils/deploy";
 
