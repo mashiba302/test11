@@ -5,7 +5,7 @@ task("deploy-contracts", "Deploys and verifies Safe Smart Account contracts").se
     await hre.run("deploy");
     await hre.run("local-verify");
 
-    // sourcify is not supported on zkSync
+    // sourcify is not supported on zkSync   
     if (hre.network.zksync) {
         await hre.run(TASK_VERIFY_ZK_ALL);
     } else {
